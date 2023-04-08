@@ -9,7 +9,7 @@ RUN apt install build-essential -y
 RUN apt-get install postgresql -y
 RUN apt install git -y
 RUN git clone https://github.com/AnnLogacheva/Lab.git
-COPY . /home/las
+COPY . /home/las/Lab
 WORKDIR /home/las/Lab/MusicShop
 RUN rm -f *moc
 RUN rm -f Makefile
